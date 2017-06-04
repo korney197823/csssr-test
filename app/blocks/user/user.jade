@@ -1,0 +1,18 @@
+mixin user()
+	+b.user&attributes(attributes)
+		+e('ul').list
+			+e('li').item
+				+e('label').name(for='name') Полное ФИО
+				+e('input').name-field(type='text' name='name' id='name' value='Корниенко Денис Витальевич')
+			+e('li').item
+				+e('label').birthday(for='birthday') Год рождения
+				+e('input').birthday-field(type='number' name='birthday' id='birthday' value='1978')
+			+e('li').item
+				+e('label').location(for='location') Место жительства
+				+e('input').location-field(type='text' name='location' id='location' value='Геленджик')
+			+e('li').item
+				+e('label').skype(for='skype') Скайп
+				+e('input').skype-field(type='text' name='skype' id='skype' value='korney197823')
+			+e('li').item
+				+e('label').email(for='email') Почта
+				+e('input').email-field(type='email' name='email' id='email' value='korney197823@gmail.com')
