@@ -1,0 +1,13 @@
+include ../container/container
+include ../logo/logo
+include ../secret/secret
+include ../title/title
+
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+container._header
+			+logo
+			+secret
+		+container._title
+			+title	
