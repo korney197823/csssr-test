@@ -1,9 +1,13 @@
 include ../container/container
 include ../user/user
+include ../checkbox/checkbox
+
 
 mixin index()
 	+b.index
 		+container
 			+user
+		+container
+			+checkbox( { name: 'skills', checked: true} )
 
 

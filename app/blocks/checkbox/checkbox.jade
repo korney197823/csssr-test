@@ -1,3 +1,20 @@
-mixin checkbox()
-	+b.checkbox&attributes(attributes)
-		block
+//Accepted arguments
+//*checkboxlabel (String)
+//*name (String)
+//*value (String) : default to 'true'
+//*cheked (Boolean)
+//*disablet (Boolean)
+
+
+
+mixin checkbox(args)
+	+b.checkbox(id=attributes.id ? attributes.id : null, class=attributes.class ? attributes.class : null): label
+		input(
+			type='checkbox'
+			name=args.name
+			value=args.value ? args.value : 'true'
+			checked=args.checked
+			disabled=args.disabled
+		)
+		!= args.checkboxlabel
+
