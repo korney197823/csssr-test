@@ -1,3 +1,9 @@
+include ../container/container
+include ../date/date
+
+
 mixin footer()
 	+b('footer').footer&attributes(attributes)
-		block
+		+container
+			+date
+

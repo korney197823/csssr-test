@@ -1,11 +1,6 @@
-.user
-	width: 100%
-	padding-y(vertical-size * 3)
-
-.user__item
-	display flex
-	justify-content space-between
-	align-items flex-start
+.date
+	display: flex
+	width 60%
 	label
 		margin-right 18px
 		font-family font-bold
@@ -13,7 +8,6 @@
 		line-height 50px
 		color text-color
 	input
-		flex 1
 		padding-x(15px)
 		background-color inherit
 		border none
@@ -21,8 +15,7 @@
 		font-family font-second
 		font-size 30px
 		line-height 36px
-	input[type=number]::-webkit-inner-spin-button,
-	input[type=number]::-webkit-outer-spin-button
+	input[type=date]::-webkit-inner-spin-button,
+	input[type=date]::-webkit-outer-spin-button
 		-webkit-appearance none
 		margin 0
-
