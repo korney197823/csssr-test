@@ -1,6 +1,7 @@
 include ../container/container
 include ../user/user
 include ../subtitile/subtitile
+include ../text/text
 include ../list/list
 include ../checkbox/checkbox
 
@@ -12,7 +13,15 @@ mixin index()
 
 		+subtitile
 			|    Расскажите о себе чекбоксами
+		+text
+			|	Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает,
+			|	что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи,
+			|	с которыми гарантировано будете справляться.
+
 		+container
 			+list(getData('skills'))
+
+		+subtitile
+			|
 
 
