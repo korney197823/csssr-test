@@ -8,13 +8,19 @@
 
 
 mixin checkbox(args)
-	+b.checkbox(id=attributes.id ? attributes.id : null, class=attributes.class ? attributes.class : null): label
+	+b.checkbox(id=attributes.id ? attributes.id : null, class=attributes.class ? attributes.class : null)
+
 		input(
+			id=args.id
 			type='checkbox'
 			name=args.name
 			value=args.value ? args.value : 'true'
 			checked=args.checked
 			disabled=args.disabled
 		)
-		!= args.checkboxlabel
+		label(
+			for=args.id
+		)
+			!= args.checkboxlabel
+
 

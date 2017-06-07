@@ -1,0 +1,12 @@
+include ../checkbox/checkbox
+
+mixin list(list)
+	+b('ul').list&attributes(attributes)
+		each item in list
+			+e('li').item
+				+checkbox( { checkboxlabel: item, name: 'skills', id: list.indexOf(item), checked: true } )
+
+
+
+
+

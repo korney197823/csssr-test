@@ -1,5 +1,6 @@
 include ../container/container
 include ../user/user
+include ../list/list
 include ../checkbox/checkbox
 
 
@@ -8,6 +9,6 @@ mixin index()
 		+container
 			+user
 		+container
-			+checkbox( { name: 'skills', checked: true} )
+			+list(getData('skills'))
 
 
