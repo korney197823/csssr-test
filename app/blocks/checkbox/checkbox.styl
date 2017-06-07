@@ -1,2 +1,42 @@
 .checkbox
 	display block
+	padding-y 8px
+
+[type='checkbox']:not(:checked),
+[type='checkbox']:checked
+	display none
+
+[type='checkbox']:not(:checked) + label,
+[type='checkbox']:checked + label
+	position relative
+	padding-left 25px
+	font-size 21px
+	font-weight 700
+	line-height 25px
+	color checkbox-color
+	cursor pointer
+
+[type='checkbox']:not(:checked) + label:before,
+[type='checkbox']:checked + label:before
+	content ''
+	position absolute
+	left 0
+	top 0
+	width 18px
+	height 18px
+	border: 2px solid text-color
+	border-radius 4px
+	cursor pointer
+
+[type='checkbox']:not(:checked) + label:after,
+[type='checkbox']:checked + label:after
+	content '\2714'
+	color #094379
+	position absolute
+	left 0
+	top 0
+	font-size 25px
+	font-weight 200
+
+
+
