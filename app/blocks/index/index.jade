@@ -1,5 +1,6 @@
 include ../container/container
 include ../user/user
+include ../subtitile/subtitile
 include ../list/list
 include ../checkbox/checkbox
 
@@ -8,6 +9,9 @@ mixin index()
 	+b.index
 		+container
 			+user
+
+		+subtitile
+			|    Расскажите о себе чекбоксами
 		+container
 			+list(getData('skills'))
 
