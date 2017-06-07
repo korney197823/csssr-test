@@ -4,6 +4,7 @@ include ../subtitile/subtitile
 include ../text/text
 include ../list/list
 include ../checkbox/checkbox
+include ../note/note
 
 
 mixin index()
@@ -23,6 +24,17 @@ mixin index()
 
 		+subtitile
 			|	Уровень владения JavaScript
+
+		input(type='text', id='example' name='example')
+
+
+		+subtitile
+			|	Расскажите о себе словами
+		+text.
+			Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати,
+			будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+
+		+note
 
 
 
