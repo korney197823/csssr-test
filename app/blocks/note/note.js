@@ -12,7 +12,7 @@ const cloneNote = () => {
 
 	parentElem.appendChild(hiddenDiv);
 
-	txt.addEventListener('keyup', () => {
+	$(txt).bind('keyup', () => {
 		content = txt.value;
 		content = content.replace(/\n/g, '<br>');
 

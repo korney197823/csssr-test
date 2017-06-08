@@ -5,6 +5,7 @@ include ../text/text
 include ../list/list
 include ../checkbox/checkbox
 include ../note/note
+include ../radio/radio
 
 
 mixin index()
@@ -35,6 +36,40 @@ mixin index()
 			будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
 
 		+note
+
+		+subtitile Какие у вас планы на будущее?
+		+text.
+			Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+		+container
+			+radio(
+				{
+					radiolabel: 'Верстать',
+					id: 'layout',
+					name: 'future'
+				}
+			)
+			+radio(
+				{
+					radiolabel: 'Прокачиваться в JS',
+					id: 'js',
+					name: 'future',
+					checked: true
+				}
+			)
+			+radio(
+				{
+					radiolabel: 'Менеджерство',
+					id: 'manage',
+					name: 'future'
+				}
+			)
+			+radio(
+			{
+				radiolabel: 'Другое',
+				id: 'other',
+				name: 'future'
+			}
+			)
 
 
 
