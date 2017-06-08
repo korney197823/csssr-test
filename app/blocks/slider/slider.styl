@@ -1,2 +1,26 @@
+@import "../../../node_modules/ion-rangeslider/css/ion.rangeSlider.css"
+@import "../../../node_modules/ion-rangeslider/css/ion.rangeSlider.skinHTML5.css"
+
 .slider
+	position relative
+	min-height 80px
 	display block
+	.irs-slider
+		width 0
+		height 0
+		top: 16px
+		background none
+		box-shadow none
+		border-radius 0
+		border-right 8px solid transparent
+		border-left 8px solid transparent
+		border-top 14px solid #2f1b15
+
+	.irs-line
+		background-color inherit
+		border-top 4px solid slider-line-color
+		border-radius 0
+	.irs-bar,
+	.irs-bar-edge
+		display: none
+

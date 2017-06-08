@@ -6,8 +6,6 @@ import cloneNode from '../blocks/note/note';
 
 $(() => {
 	svg4everybody();
-	$('#example').ionRangeSlider(
-
-	);
+	$('#slider').ionRangeSlider();
 	cloneNode();
 });
