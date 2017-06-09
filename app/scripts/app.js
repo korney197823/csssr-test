@@ -6,6 +6,13 @@ import cloneNode from '../blocks/note/note';
 
 $(() => {
 	svg4everybody();
-	$('#slider').ionRangeSlider();
+	$('#slider').ionRangeSlider({
+		value: [
+			'Не владею',
+			'Использую готовые решения',
+			'Использую готовые решения и умею их переделывать',
+			'Пишу сложный JS с нуля'
+		]
+	});
 	cloneNode();
 });

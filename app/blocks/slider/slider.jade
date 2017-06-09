@@ -1,11 +1,19 @@
+include ../scale/scale
+
 mixin slider()
 	+b.slider&attributes(attributes)
-		input(
+		+e('input').input(
 			id="slider"
 			type="text"
-			step="10"
-			value="300"
+			data-min="0"
+			data-max="100"
+			data-from="50"
 			data-hide-min-max="true"
 			data-hide-from-to="true"
-			data-grid="true"
+
 		)
+		+scale
+
+
+
+
