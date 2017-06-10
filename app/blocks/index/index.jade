@@ -24,10 +24,11 @@ mixin index()
 		+container
 			+list(getData('skills'))
 
-		+subtitile
-			|	Уровень владения JavaScript
+		+container._slider
+			+subtitile
+				|	Уровень владения JavaScript
 
-		+slider
+			+slider
 
 
 		+subtitile
@@ -37,40 +38,40 @@ mixin index()
 			будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
 
 		+note
-
-		+subtitile Какие у вас планы на будущее?
-		+text.
-			Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-		+container
-			+radio(
+		+container._future
+			+subtitile Какие у вас планы на будущее?
+			+text.
+				Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+			+container
+				+radio(
+					{
+						radiolabel: 'Верстать',
+						id: 'layout',
+						name: 'future'
+					}
+				)
+				+radio(
+					{
+						radiolabel: 'Прокачиваться в JS',
+						id: 'js',
+						name: 'future',
+						checked: true
+					}
+				)
+				+radio(
+					{
+						radiolabel: 'Менеджерство',
+						id: 'manage',
+						name: 'future'
+					}
+				)
+				+radio(
 				{
-					radiolabel: 'Верстать',
-					id: 'layout',
+					radiolabel: 'Другое',
+					id: 'other',
 					name: 'future'
 				}
-			)
-			+radio(
-				{
-					radiolabel: 'Прокачиваться в JS',
-					id: 'js',
-					name: 'future',
-					checked: true
-				}
-			)
-			+radio(
-				{
-					radiolabel: 'Менеджерство',
-					id: 'manage',
-					name: 'future'
-				}
-			)
-			+radio(
-			{
-				radiolabel: 'Другое',
-				id: 'other',
-				name: 'future'
-			}
-			)
+				)
 
 
 

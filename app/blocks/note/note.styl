@@ -1,3 +1,5 @@
+.note
+	padding-y(15px)
 .note__area
 	display block
 	width 100%
@@ -6,22 +8,20 @@
 	font-size 30px
 	line-height 60px
 	background-color inherit
-	background-attachment: local
-	background-image 	linear-gradient(to right, transparent 10px, transparent 10px),
-						linear-gradient(to left, transparent 10px, transparent 10px),
-						repeating-linear-gradient(transparent, transparent 58px, #3f241e 58px, #3f241e 60px, transparent 60px);
+	background-image linear-gradient(to right, transparent 10px, transparent 10px), linear-gradient(to left, transparent 10px, transparent 10px),  repeating-linear-gradient(transparent, transparent 58px, #3f241e 58px, #3f241e 60px, transparent 60px)
+	background-attachment local
 	border none
 
 .note__hidden
 	display none
 	width 100%
 	min-height 200px
-	white-space pre-wrap
 	font-family font-second
 	font-size 30px
 	line-height 60px
-	background-color inherit
+	white-space pre-wrap
 	word-wrap break-word
+	background-color inherit
 
 .noscroll
 	overflow hidden
