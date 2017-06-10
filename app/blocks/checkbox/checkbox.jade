@@ -1,12 +1,3 @@
-//Accepted arguments
-//*checkboxlabel (String)
-//*name (String)
-//*value (String) : default to 'true'
-//*cheked (Boolean)
-//*disablet (Boolean)
-
-
-
 mixin checkbox(args)
 	+b.checkbox(id=attributes.id ? attributes.id : null, class=attributes.class ? attributes.class : null)
 
@@ -22,5 +13,3 @@ mixin checkbox(args)
 			for=args.id
 		)
 			!= args.checkboxlabel
-
-
